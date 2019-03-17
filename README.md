@@ -1,8 +1,8 @@
 # Propr
-#### Website: http://propr.tudelft.nl/  |  Blog: https://goo.gl/HUDa72
 
 ## What is propr?
-If you are an integrator who has longed for a platform to anonymously provide feedback to the contributors, specifically on how they could make their pull requests easier to review, propr is the right platform for you.
+If you are an integrator who has longed for a platform to anonymously provide feedback to the contributors, specifically on how they could make their pull requests easier to review, propr is the right platform for you. If you want to learn more about propr, check out our blog post: https://goo.gl/HUDa72.
+
 
 If you are a developer contributing to a project that uses propr and you want to know how your pull requests fare, you should check out the reports dashboard here: http://propr.tudelft.nl/report.html
 
@@ -17,16 +17,16 @@ Presently, there is no way to collate feedback from integrators and project mana
 
 ## Repository contents:
 A webhook server that listens for POST requests from installed GitHub repositories. This has the code for the back-end server.
-If you are looking for the frontend, head on over to https://github.com/achyudhk/Propr-Website. 
+If you are looking for the frontend, head on over to https://github.com/achyudh/propr-frontend. 
 ## Getting started:
 ### Prerequisites:
-This extension is a Python script that uses Flask, among other inbuilt Python libraries. You will need a recent version of Python 3 with Flask installed. ALternatively, you can just use Anaconda3.
+This extension is a Python script that uses Flask, among other inbuilt Python libraries. You will need a recent version of Python 3 with Flask installed. Alternatively, you can just use Anaconda3.
 ### Setup:
-You can run the server.py as a standard Flask app as shown inthe [docs](http://flask.pocoo.org/docs/0.12/). To enable a project to use this feedback boot, the project must have a webhook which connects to the IP address of the machine that is running the servlet. The option to add a webhook can be found under Settings -> Webhooks. Ensure that the only data that is beThis also/creating/). 
+You can run the server.py as a standard Flask app as shown in the [docs](http://flask.pocoo.org/docs/0.12/). To enable a project to use this feedback boot, the project must have a webhook which connects to the IP address of the machine that is running the servlet. The option to add a webhook can be found under Settings -> Webhooks. Ensure that the only data that is beThis also/creating/). 
 
 ## Data collected:
 * It stores a local copy of the patch from the pull request in the server.
-* The ratings and comments filled in the form posted by the bot will be saved in a cloud database along with publicly available information about the pull request and the commits it is comprised of. For more information see [this repo](https://github.com/achyudhk/Pull-Request-Feedback-Website).
+* The ratings and comments filled in the form posted by the bot will be saved in a cloud database along with publicly available information about the pull request and the commits it is comprised of. For more information see [this repo](https://github.com/achyudh/propr-frontend).
 * We don't store any personal information such as your email address or name of the feedback survey participants. We ask for GitHub authentication as an anonymous identifier to account for duplicate feedback entries and to see people specific preferences.
 
 ## Limitations:
